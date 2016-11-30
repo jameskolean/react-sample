@@ -1,0 +1,6 @@
+.editorconfig
+/.gradle/
+/bin/
+/build/
+node_modules
+src/main/webapp/dist
