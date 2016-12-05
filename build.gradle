@@ -11,7 +11,7 @@ buildscript {
   dependencies {
     classpath 'io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE'
     classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
-    classpath 'com.moowork.gradle:gradle-node-plugin:0.12'
+    classpath 'com.moowork.gradle:gradle-node-plugin:0.14'
   }
 }
 
@@ -21,7 +21,7 @@ apply plugin: 'spring-boot'
 apply plugin: "com.moowork.node"
 
 node {
-  version = '5.8.0'
+  version = '6.9.1'
   npmVersion = '3.8.0'
   download = true
   // distBaseUrl = Custom artifactory location here.

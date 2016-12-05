@@ -1,10 +1,10 @@
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "React" }] */
 import React, { Component } from 'react'
 
-export default class Home extends Component {
+export default class Welcome extends Component {
   render () {
     return (
-      <div className="home">Home is here</div>
+      <div className="welcome">Weclome, pick an option.</div>
     )
   }
 }

@@ -1,10 +1,14 @@
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "React" }] */
 import React, { Component } from 'react'
+import Nav from './nav/nav'
 
-export default class Home extends Component {
+export default class Application2 extends Component {
   render () {
     return (
-      <div className="home">Home is here</div>
+      <div>
+        <Nav/>
+        {this.props.children}
+      </div>
     )
   }
 }
