@@ -4,7 +4,7 @@ import { Router, Route, Link, IndexRoute } from 'react-router'
 /* eslint-enable no-unused-vars */
 
 export default class Nav extends Component {
-  render () {
+  render () {   
     return (
       <div className='nav'>
         <Link to='/people'>People</Link>&nbsp;
