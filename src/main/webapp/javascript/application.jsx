@@ -1,8 +1,8 @@
-/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "React" }] */
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "[React|Nav]" }] */
 import React, { Component } from 'react'
 import Nav from './nav/nav'
-// this is a test 2
-export default class Application2 extends Component {
+
+export default class Application extends Component {
   render () {
     return (
       <div>
