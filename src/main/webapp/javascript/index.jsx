@@ -1,25 +1,28 @@
-/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "React" }] */
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "React|Router|Route|Link" }] */
 import React from 'react'
+import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
 import ReactDOM from 'react-dom'
 import People from './people/people'
-import Courses from './courses/courses'  
-import Home from './home'
-import Welcome from './welcome'
 import Application from './application'
+import ComposableComponent from './composableComponent/composableComponent'
+import SimpleState from './simpleState/simpleState'
+import NestedData from './nestedData/nestedData'
 import '../css/general.css'
-import { Router, Route, Link, IndexRoute, hashHistory  } from 'react-router'
 
-const NotFound = () => <h1>404.. asdasdadsdaThis page is not found!</h1>
+const NotFound = () => <h1>404.. This page is not found!</h1>
+const statelessFunctionComponent = () => <h1>Hello from a stateless function component</h1>
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={Application}>
-      <IndexRoute component={Home} />
-      <Route path='/' component={Welcome} />
-      <Route path='/people' component={People} />
-      <Route path='/courses' component={Courses} />
+      <IndexRoute component={statelessFunctionComponent} />
+      <Route path='/rest' component={People} />
+      <Route path='/simpleState' component={SimpleState} />
+      <Route path='/nestedData' component={NestedData} />
+      <Route path='/composable-component' component={ComposableComponent} />
       <Route path='*' component={NotFound} />
     </Route>
   </Router>,
-  document.getElementById( 'content' )
+  document.getElementById('content')
 )
+

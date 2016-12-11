@@ -25,7 +25,6 @@ export default class People extends Component {
   }
 
   componentWillUnmount () {
-    this.serverRequest.abort()
   }
 
   render () {

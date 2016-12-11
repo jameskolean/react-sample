@@ -4,11 +4,18 @@ import { Router, Route, Link, IndexRoute } from 'react-router'
 /* eslint-enable no-unused-vars */
 
 export default class Nav extends Component {
-  render () {   
+  render () {
     return (
       <div className='nav'>
-        <Link to='/people'>People</Link>&nbsp;
-        <Link to='/courses'>Courses</Link>
+        <Link to='/'>Simplest</Link>
+        &nbsp;|&nbsp;
+        <Link to='/simpleState'>SimpleState</Link>
+        &nbsp;|&nbsp;
+        <Link to='/nestedData'>Nested Data</Link>
+        &nbsp;|&nbsp;
+        <Link to='/rest'>Rest</Link>
+        &nbsp;|&nbsp;
+        <Link to='/composable-component'>Composable Components</Link>
       </div>
     )
   }
