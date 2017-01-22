@@ -1,10 +1,12 @@
-package com.codegreenllc.react;
+package com.codegreenllc.react.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.codegreenllc.react.dto.Person;
 
 @RestController
 public class PersonController {

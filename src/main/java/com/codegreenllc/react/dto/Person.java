@@ -1,10 +1,10 @@
-package com.codegreenllc.react;
+package com.codegreenllc.react.dto;
 
 import lombok.Data;
 
 @Data
 public class Person {
-	Person(String firstName, String lastName){
+	public Person(String firstName, String lastName){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		

@@ -30,7 +30,6 @@ module.exports = {
         loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
         include: SRC
       },
-
       {test: /\.css$/, loader: 'style-loader!css-loader'},
       {test: /\.less$/, loader: 'style!css!less'},
 
@@ -42,4 +41,4 @@ module.exports = {
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
     ]
   }
-};
+}
